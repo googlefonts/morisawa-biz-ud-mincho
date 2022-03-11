@@ -12,8 +12,8 @@ import os, shutil, subprocess
 # This script converts the "extensions" Glyphs file to TTF, autohints it, and then merges it into the existing TTF file via psftmerge. There's some oddities in this process which have to be solved in post-production at the end of the process due to tables getting dropped / metadata being set differently.
 
 IMPORT = Path('sources/ttf')
-TEMP = Path('fonts/temp')
-EXPORT = Path('fonts/ttf')
+TEMP = Path('temp')
+EXPORT = Path('fonts')
 SRC_IMPORT = Path("sources/extensions")
 
 for font in IMPORT.glob("*.ttf"):
