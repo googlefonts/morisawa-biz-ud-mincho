@@ -18,14 +18,14 @@ build: build.stamp
 
 venv: venv/touchfile
 
-build.stamp: venv .init.stamp python sources/build.py $(SOURCES)
-	. venv/bin/activate; rm -rf fonts/; python sources/build.py && touch build.stamp
+build.stamp: venv .init.stamp sources/build.py $(SOURCES)
+	. venv/bin/activate; rm -rf fonts/; python3 sources/build.py && touch build.stamp
 
 .init.stamp: venv
-	. venv/bin/activate; python scripts/first-run.py
+	. venv/bin/activate; python3 scripts/first-run.py
 
 venv/touchfile: requirements.txt
-	test -d venv || python -m venv venv
+	test -d venv || python3 -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/touchfile
 
@@ -39,7 +39,7 @@ images: venv build.stamp $(DRAWBOT_OUTPUT)
 	git add documentation/*.png && git commit -m "Rebuild images" documentation/*.png
 
 %.png: %.py build.stamp
-	python $< --output $@
+	python3 $< --output $@
 
 clean:
 	rm -rf venv
