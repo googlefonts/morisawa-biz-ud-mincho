@@ -1,7 +1,7 @@
 # Morisawa BIZ UDMincho
 
 ![UDMincho](documentation/header.png)
-
+<!--
 [![][Fontbakery]](https://googlefonts.github.io/morisawa-biz-ud-mincho/fontbakery/fontbakery-report.html)
 [![][Universal]](https://googlefonts.github.io/morisawa-biz-ud-mincho/fontbakery/fontbakery-report.html)
 [![][GF Profile]](https://googlefonts.github.io/morisawa-biz-ud-mincho/fontbakery/fontbakery-report.html)
@@ -13,7 +13,7 @@
 [Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-mincho%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-mincho%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-mincho%2Fgh-pages%2Fbadges%2FUniversal.json
-
+-->
 TypeBank UD Mincho combines ease of identification and legibility and the high-class tradition of the Mincho typeface. Because most of the Mincho types are designed with fine horizontal lines, some displays and signs are difficult to read for people with vision problems. "TypeBank UD Mincho" is designed based on "TypeBank Yoko Futo (Bold Horizontal) Mincho" designed with thicker horizontal lines than the traditional Mincho typefaces. For the universal design version, the sonant and semi-sonant marks are designed for easier identification, and the characters are adjusted to maintain their forms with slightly larger face and wider counters.
 
 ## About TypeBank
