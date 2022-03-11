@@ -1,11 +1,9 @@
-SOURCES=$(shell python3 scripts/read-config.py --sources )
-FAMILY=$(shell python3 scripts/read-config.py --family )
 DRAWBOT_SCRIPTS=$(shell ls documentation/*.py)
 DRAWBOT_OUTPUT=$(shell ls documentation/*.py | sed 's/\.py/.png/g')
 
 help:
 	@echo "###"
-	@echo "# Build targets for $(FAMILY)"
+	@echo "# Build targets for UD Mincho"
 	@echo "###"
 	@echo
 	@echo "  make build:  Builds the fonts and places them in the fonts/ directory"
@@ -18,8 +16,8 @@ build: build.stamp
 
 venv: venv/touchfile
 
-build.stamp: venv .init.stamp sources/build.py $(SOURCES)
-	. venv/bin/activate; rm -rf fonts/; python3 sources/build.py && touch build.stamp
+build.stamp: venv .init.stamp sources/build.py
+	. venv/bin/activate; python3 sources/build.py && touch build.stamp
 
 .init.stamp: venv
 	. venv/bin/activate; python3 scripts/first-run.py
