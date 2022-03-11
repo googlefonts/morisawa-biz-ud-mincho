@@ -13,10 +13,11 @@ import os, shutil, subprocess
 
 os.mkdir("temp")
 os.mkdir("fonts")
+os.mkdir("fonts/ttf")
 
 IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
-EXPORT = Path('fonts')
+EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
 
 for font in IMPORT.glob("*.ttf"):
