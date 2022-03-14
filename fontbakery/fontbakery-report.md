@@ -6,7 +6,7 @@ Fontbakery version: 0.8.7
 * [com.google.fonts/check/family/panose_proportion](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_proportion)
 
 * 🔥 **FAIL** PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[16] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
+</div></details><br></div></details><details><summary><b>[17] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
 * [com.google.fonts/check/glyph_coverage](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage)
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -23,10 +23,10 @@ Fontbakery version: 0.8.7
 
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUDP Mincho Regular"
-But got:  "BIZ UDPMincho Regular" [code: bad-entry]
+But got:  "BIZ UDPMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUDP Mincho Regular"
-But got:  "BIZ UDPMincho Regular" [code: bad-entry]
+But got:  "BIZ UDPMincho" [code: bad-entry]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -36,6 +36,11 @@ But got:  "BIZ UDPMincho Regular" [code: bad-entry]
 
 * 🔥 **FAIL** OS/2.sTypoAscender is "1802" it should be 1802.24 [code: bad-OS/2.sTypoAscender]
 * 🔥 **FAIL** OS/2.sTypoDescender is "-246" it should be -245.76 [code: bad-OS/2.sTypoDescender]
+</div></details><details><summary>🔥 <b>FAIL:</b> Name table records must not have trailing spaces.</summary><div>
+* [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
+
+* 🔥 **FAIL** Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]
+* 🔥 **FAIL** Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
 * [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
 
@@ -56,16 +61,16 @@ But got:  "BIZ UDPMincho Regular" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12950
-	- glyph12240
-	- glyph13047
-	- glyph00032
-	- glyph12309
-	- glyph13489
-	- glyph13392
-	- glyph01061
-	- glyph00489
-	- glyph00419 
+	- glyph13034
+	- glyph00323
+	- glyph00392
+	- glyph01071
+	- glyph12895
+	- glyph13015
+	- glyph00839
+	- glyph13026
+	- glyph12991
+	- glyph00414 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -129,7 +134,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * uni4E9F (U+4E9F): L<<984.0,1059.0>--<985.0,1174.0>> and 103 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[16] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
+</div></details><br></div></details><details><summary><b>[17] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
 * [com.google.fonts/check/glyph_coverage](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage)
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -146,10 +151,10 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUD Mincho Regular"
-But got:  "BIZ UDMincho Regular" [code: bad-entry]
+But got:  "BIZ UDMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUD Mincho Regular"
-But got:  "BIZ UDMincho Regular" [code: bad-entry]
+But got:  "BIZ UDMincho" [code: bad-entry]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -159,6 +164,11 @@ But got:  "BIZ UDMincho Regular" [code: bad-entry]
 
 * 🔥 **FAIL** OS/2.sTypoAscender is "1802" it should be 1802.24 [code: bad-OS/2.sTypoAscender]
 * 🔥 **FAIL** OS/2.sTypoDescender is "-246" it should be -245.76 [code: bad-OS/2.sTypoDescender]
+</div></details><details><summary>🔥 <b>FAIL:</b> Name table records must not have trailing spaces.</summary><div>
+* [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
+
+* 🔥 **FAIL** Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]
+* 🔥 **FAIL** Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
 * [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
 
@@ -179,16 +189,16 @@ But got:  "BIZ UDMincho Regular" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13373
-	- glyph01391
-	- glyph12324
-	- glyph01685
-	- glyph12502
-	- glyph01311
-	- glyph13381
-	- glyph01744
-	- glyph01540
-	- glyph01347 
+	- glyph12330
+	- glyph01533
+	- glyph01483
+	- glyph01537
+	- glyph12090
+	- glyph13747
+	- glyph01299
+	- glyph12152
+	- glyph12287
+	- glyph01569 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -257,8 +267,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 13 | 20 | 225 | 15 | 157 | 0 |
-| 0% | 3% | 5% | 52% | 3% | 37% | 0% |
+| 0 | 15 | 20 | 225 | 15 | 155 | 0 |
+| 0% | 3% | 5% | 52% | 3% | 36% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

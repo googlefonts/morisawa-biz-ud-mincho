@@ -73,11 +73,11 @@
             </tr>
             <tr>
                 <td>0</td>
-                <td>13</td>
+                <td>15</td>
                 <td>20</td>
                 <td>225</td>
                 <td>15</td>
-                <td>157</td>
+                <td>155</td>
             </tr>
             <tr>
                 <td>0%</td>
@@ -132,17 +132,17 @@
 
 <details><summary>🔥 <strong>fonts/ttf/BIZUDPMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: &quot;BIZUDP Mincho Regular&quot;
-But got:  &quot;BIZ UDPMincho Regular&quot; [code: bad-entry]</p>
+But got:  &quot;BIZ UDPMincho&quot; [code: bad-entry]</p>
 </span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: &quot;BIZUDP Mincho Regular&quot;
-But got:  &quot;BIZ UDPMincho Regular&quot; [code: bad-entry]</p>
+But got:  &quot;BIZ UDPMincho&quot; [code: bad-entry]</p>
 </span></li></ul></div></details>
 <details><summary>🔥 <strong>fonts/ttf/BIZUDMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: &quot;BIZUD Mincho Regular&quot;
-But got:  &quot;BIZ UDMincho Regular&quot; [code: bad-entry]</p>
+But got:  &quot;BIZ UDMincho&quot; [code: bad-entry]</p>
 </span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: &quot;BIZUD Mincho Regular&quot;
-But got:  &quot;BIZ UDMincho Regular&quot; [code: bad-entry]</p>
+But got:  &quot;BIZ UDMincho&quot; [code: bad-entry]</p>
 </span></li></ul></div></details>
 <h3>Font enables smart dropout control in "prep" table instructions?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/smart_dropout&gt;</div>
@@ -167,36 +167,45 @@ But got:  &quot;BIZ UDMincho Regular&quot; [code: bad-entry]</p>
 <details><summary>🔥 <strong>fonts/ttf/BIZUDMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
 </span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
 </span></li></ul></div></details>
-<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h2>&lt;Section: Universal&gt; 🔥🔥⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Name table records must not have trailing spaces.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/trailing_spaces&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]</p>
+</span></li></ul></div></details>
 <h3>Check font contains no unreachable glyphs</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
 
 <details><summary>⚠️ <strong>fonts/ttf/BIZUDPMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
-- glyph12950
-- glyph12240
-- glyph13047
-- glyph00032
-- glyph12309
-- glyph13489
-- glyph13392
-- glyph01061
-- glyph00489
-- glyph00419
+- glyph13034
+- glyph00323
+- glyph00392
+- glyph01071
+- glyph12895
+- glyph13015
+- glyph00839
+- glyph13026
+- glyph12991
+- glyph00414
 - And 1113 more.</p>
 <p>Use -F or --full-lists to disable shortening of long lists.
 [code: unreachable-glyphs]</p>
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/BIZUDMincho-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
-- glyph13373
-- glyph01391
-- glyph12324
-- glyph01685
-- glyph12502
-- glyph01311
-- glyph13381
-- glyph01744
-- glyph01540
-- glyph01347
+- glyph12330
+- glyph01533
+- glyph01483
+- glyph01537
+- glyph12090
+- glyph13747
+- glyph01299
+- glyph12152
+- glyph12287
+- glyph01569
 - And 1285 more.</p>
 <p>Use -F or --full-lists to disable shortening of long lists.
 [code: unreachable-glyphs]</p>
