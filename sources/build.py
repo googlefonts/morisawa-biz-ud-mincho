@@ -86,7 +86,7 @@ for font in IMPORT.glob("*.ttf"):
         sourceTTF["name"].setName("Copyright 2022 The BIZ UDMincho Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)",0,3,1,platformID)
         sourceTTF["name"].setName(name,1,3,1,platformID)
 
-        sourceTTF["name"].setName(sourceTTF["name"].getDebugName(4).replace("Medium","Regular"),4,3,1,platformID)
+        sourceTTF["name"].setName(sourceTTF["name"].getDebugName(4),4,3,1,platformID)
 
         if "Bold" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Bold",6,3,1,platformID)
