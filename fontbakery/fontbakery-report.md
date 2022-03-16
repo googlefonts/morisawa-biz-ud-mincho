@@ -6,7 +6,7 @@ Fontbakery version: 0.8.7
 * [com.google.fonts/check/family/panose_proportion](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_proportion)
 
 * 🔥 **FAIL** PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[22] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
+</div></details><br></div></details><details><summary><b>[21] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
 * [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
 
 * 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
@@ -55,11 +55,6 @@ But got:  "BIZ UDPMincho" [code: bad-entry]
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
 * 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
-</div></details><details><summary>🔥 <b>FAIL:</b> Name table records must not have trailing spaces.</summary><div>
-* [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
-
-* 🔥 **FAIL** Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]
-* 🔥 **FAIL** Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDPMincho ' [code: trailing-space]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
 * [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
 
@@ -80,16 +75,16 @@ But got:  "BIZ UDPMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12988
-	- glyph00318
-	- glyph13436
-	- glyph12999
-	- glyph00098
-	- glyph12997
-	- glyph00396
-	- glyph11985
-	- glyph11989
-	- glyph00634 
+	- glyph00475
+	- glyph00325
+	- glyph11988
+	- glyph00023
+	- glyph00362
+	- glyph00062
+	- glyph00275
+	- glyph11994
+	- glyph12315
+	- glyph13464 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -153,7 +148,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * uni4E9F (U+4E9F): L<<984.0,1059.0>--<985.0,1174.0>> and 103 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[22] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
+</div></details><br></div></details><details><summary><b>[21] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
 * [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
 
 * 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
@@ -202,11 +197,6 @@ But got:  "BIZ UDMincho" [code: bad-entry]
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
 * 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
-</div></details><details><summary>🔥 <b>FAIL:</b> Name table records must not have trailing spaces.</summary><div>
-* [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
-
-* 🔥 **FAIL** Name table record with key = (3, 1, 1033, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]
-* 🔥 **FAIL** Name table record with key = (3, 1, 1041, 4) has trailing spaces that must be removed: 'BIZ UDMincho ' [code: trailing-space]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
 * [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
 
@@ -227,16 +217,16 @@ But got:  "BIZ UDMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01592
-	- glyph01562
-	- glyph12064
-	- glyph01532
-	- glyph01631
-	- glyph12484
-	- glyph13659
-	- glyph13292
-	- glyph12219
-	- glyph13588 
+	- glyph12864
+	- glyph12180
+	- glyph12509
+	- glyph01444
+	- glyph01700
+	- glyph01361
+	- glyph12039
+	- glyph01283
+	- glyph01871
+	- glyph01797 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -305,8 +295,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 12 | 13 | 20 | 215 | 15 | 155 | 0 |
-| 3% | 3% | 5% | 50% | 3% | 36% | 0% |
+| 12 | 11 | 20 | 215 | 15 | 157 | 0 |
+| 3% | 3% | 5% | 50% | 3% | 37% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
