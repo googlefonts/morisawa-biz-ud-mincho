@@ -71,16 +71,16 @@ But got:  "BIZ UDPMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph00463
-	- glyph00352
-	- glyph12901
-	- glyph00397
-	- glyph00375
-	- glyph12525
-	- glyph00831
-	- glyph13467
-	- glyph12937
-	- glyph00981 
+	- glyph12980
+	- glyph00099
+	- glyph01081
+	- glyph00314
+	- glyph13576
+	- glyph00529
+	- glyph01247
+	- glyph00967
+	- glyph00799
+	- glyph12001 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -218,16 +218,16 @@ But got:  "BIZ UDMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01573
-	- glyph01698
-	- glyph01900
-	- glyph12068
-	- glyph12872
-	- glyph01508
-	- glyph12049
-	- glyph01873
-	- glyph13313
-	- glyph01673 
+	- glyph01640
+	- glyph13318
+	- glyph01795
+	- glyph01638
+	- glyph13591
+	- glyph01341
+	- glyph01525
+	- glyph01452
+	- glyph13593
+	- glyph12105 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
