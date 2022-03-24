@@ -14,11 +14,17 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-mincho%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-mincho%2Fgh-pages%2Fbadges%2FUniversal.json
 -->
-TypeBank UD Mincho combines ease of identification and legibility and the high-class tradition of the Mincho typeface. Because most of the Mincho types are designed with fine horizontal lines, some displays and signs are difficult to read for people with vision problems. "TypeBank UD Mincho" is designed based on "TypeBank Yoko Futo (Bold Horizontal) Mincho" designed with thicker horizontal lines than the traditional Mincho typefaces. For the universal design version, the sonant and semi-sonant marks are designed for easier identification, and the characters are adjusted to maintain their forms with slightly larger face and wider counters.
+モリサワのBIZ UDゴシックは、教育やビジネス文書作成などに活用できるよう、より多くの方にとって読みやすく使いやすいように設計されたユニバーサルデザインフォントです。読みやすさとデザインバランスに優れた、すっきりとしたUDゴシック書体で、漢字の省略できるハネやゲタを取ることで、文字をクリアに見せています。大きめな字面でも文字としてのかたちのバランスを損ねないよう、フトコロなどの空間を細かく調整しています。かなは漢字に比べてやや小ぶりに作られており、細いウエイトで長文を組むとほどよい抑揚が生まれます。
 
-## About TypeBank
+BIZ UD Gothic is a universal design typeface designed to be easy to read and ideal for education and business documentation. It is a highly legible and well-balanced design sans serif. In order to make the kanji more clear and identifiable, the letterforms are simplified by omitting hane (hook) and geta (the vertical lines extending beyond horizontal strokes at the bottom of kanji). Counters and other spaces are finely adjusted so that the overall balance of the type is not impaired even with the use in relatively large size. The kana are made slightly smaller than the kanji to give a good rhythm and flow when setting long texts in the lighter weights.
 
-TypeBank has a long dedication to Japanese digital type solutions and is one of the pioneers in this field since 1975. Now we supply fonts for publishing and printing, TVs and set-top boxes (ARIB conforming fonts), newspaper production (U-PRESS conforming), software and mobile and home appliances. Now a part of Morisawa Inc.
+
+## About Morisawa
+
+モリサワは、1924 年に世界に先駆けて邦文写真植字機を発明して以来、一貫してタイポグラフィの未来をみつめて研究開発を続けているフォントメーカーです。日本語および多言語フォント 1,500 書体以上が使えるフォントライセンス製品をはじめ、web フォントや組込みフォント、多言語ユニバーサル情報配信ツールなどを提供しています。
+
+Morisawa Inc. is Japan’s leading font foundry that has never wavered from its commitment to undertaking research and development in typography since its invention of the first Japanese phototypesetting machine in 1924. The company provides font licenses for over 1,500 typefaces of Japanese and multi-script, web font services, embedded fonts, and multilingual e-magazine/book solution services.
+
 
 ## Building
 
