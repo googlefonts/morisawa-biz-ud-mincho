@@ -19,7 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
-VERSION = "1.002"
+VERSION = "1.001"
 
 for font in IMPORT.glob("*.ttf"):
     
@@ -87,7 +87,7 @@ for font in IMPORT.glob("*.ttf"):
         sourceTTF["name"].setName(name,1,3,1,platformID)
         sourceTTF["name"].setName("Version "+VERSION,5,3,1,platformID)
 
-        sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace(" Medium",""),4,3,1,platformID)
+        sourceTTF["name"].setName(sourceTTF["name"].getDebugName(4).replace(" Medium",""),4,3,1,platformID)
 
         if "Bold" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Bold",6,3,1,platformID)
