@@ -46,7 +46,7 @@ Expected: "BIZUDP Mincho Regular"
 But got:  "BIZ UDPMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUDP Mincho Regular"
-But got:  "BIZ UDPMincho" [code: bad-entry]
+But got:  "BIZ UDP明朝" [code: bad-entry]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -71,16 +71,16 @@ But got:  "BIZ UDPMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13412
-	- glyph00819
-	- glyph00878
-	- glyph00137
-	- glyph00532
-	- glyph00807
-	- glyph00002
-	- glyph12031
-	- glyph11997
-	- glyph00336 
+	- glyph01018
+	- glyph00849
+	- glyph12901
+	- glyph00044
+	- glyph11989
+	- glyph11973
+	- glyph01002
+	- glyph00728
+	- glyph00999
+	- glyph00396 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -188,7 +188,7 @@ Expected: "BIZUD Mincho Regular"
 But got:  "BIZ UDMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUD Mincho Regular"
-But got:  "BIZ UDMincho" [code: bad-entry]
+But got:  "BIZ UD明朝" [code: bad-entry]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -218,16 +218,16 @@ But got:  "BIZ UDMincho" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01845
-	- glyph01256
-	- glyph01695
-	- glyph12212
-	- glyph12152
-	- glyph13303
-	- glyph12118
-	- glyph01352
-	- glyph01582
-	- glyph01849 
+	- glyph12517
+	- glyph12155
+	- glyph12283
+	- glyph01625
+	- glyph12149
+	- glyph13711
+	- glyph13598
+	- glyph01733
+	- glyph12127
+	- glyph01356 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
