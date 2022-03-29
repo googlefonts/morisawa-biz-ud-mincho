@@ -18,6 +18,7 @@
 
 BIZ UD Mincho is a universal design typeface designed to be easy to read and ideal for education and business documentation. It combines high quality in readability and legibility while carrying on the stately Japanese Mincho type tradition. BIZ UD Mincho bases its design on one of the typefaces from the Morisawa font library, which has thicker horizontal lines than the traditional Mincho type style. Because most Mincho types have thin horizontal strokes, the style can be difficult to read on some displays or signs and for people with low vision. For the universal design version, dakuten (゛) and handakuten (゜) voicing marks are designed to be more legible, and the letterforms are adjusted to maintain their balance while having a larger face and wider counters.
 
+Download the latest version of the fonts [from the releases page](https://github.com/googlefonts/morisawa-biz-ud-mincho/releases).
 
 ## About Morisawa
 
