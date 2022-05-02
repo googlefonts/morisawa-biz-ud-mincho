@@ -151,6 +151,7 @@ for font in IMPORT.glob("*.ttf"):
     newDSIG.signatureRecords = []
     finalVersion.tables["DSIG"] = newDSIG
 
+
     finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ"))
 
 shutil.rmtree("temp")
