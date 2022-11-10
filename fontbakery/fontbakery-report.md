@@ -80,16 +80,16 @@ But got:  "BIZ UDP明朝". [code: non-ribbi-bad-value]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph00483
-	- glyph11955
-	- glyph00459
-	- glyph00050
-	- glyph01013
-	- glyph12967
-	- glyph01018
-	- glyph00408
-	- glyph13390
-	- glyph00076 
+	- glyph13511
+	- glyph01017
+	- glyph12270
+	- glyph00847
+	- glyph01025
+	- glyph12241
+	- glyph01003
+	- glyph00461
+	- glyph01247
+	- glyph00485 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -244,16 +244,16 @@ But got:  "BIZ UD明朝". [code: non-ribbi-bad-value]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13771
-	- glyph01336
-	- glyph12217
-	- glyph01793
-	- glyph13788
-	- glyph01550
-	- glyph01633
-	- glyph13631
-	- glyph13593
-	- glyph13780 
+	- glyph01424
+	- glyph12171
+	- glyph01345
+	- glyph12208
+	- glyph01513
+	- glyph01617
+	- glyph01251
+	- glyph13728
+	- glyph01768
+	- glyph12115 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -394,16 +394,16 @@ But got:  "BIZ UDP明朝" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph00483
-	- glyph11955
-	- glyph00459
-	- glyph00050
-	- glyph01013
-	- glyph12967
-	- glyph01018
-	- glyph00408
-	- glyph13390
-	- glyph00076 
+	- glyph13511
+	- glyph01017
+	- glyph12270
+	- glyph00847
+	- glyph01025
+	- glyph12241
+	- glyph01003
+	- glyph00461
+	- glyph01247
+	- glyph00485 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -551,16 +551,16 @@ But got:  "BIZ UD明朝" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13771
-	- glyph01336
-	- glyph12217
-	- glyph01793
-	- glyph13788
-	- glyph01550
-	- glyph01633
-	- glyph13631
-	- glyph13593
-	- glyph13780 
+	- glyph01424
+	- glyph12171
+	- glyph01345
+	- glyph12208
+	- glyph01513
+	- glyph01617
+	- glyph01251
+	- glyph13728
+	- glyph01768
+	- glyph12115 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
