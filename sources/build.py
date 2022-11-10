@@ -19,7 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
-VERSION = "1.05"
+VERSION = "1.06"
 
 for font in IMPORT.glob("*.ttf"):
     
@@ -37,8 +37,8 @@ for font in IMPORT.glob("*.ttf"):
         str(TEMP),
         ])
     
-    if "Bold" in fontName:
-        extSource = str(TEMP / str(fontName[:-4].replace("-Bold","Ext-Bold"+".ttf")))
+    if "Heavy" in fontName:
+        extSource = str(TEMP / str(fontName[:-4].replace("-Heavy","Ext-Heavy"+".ttf")))
         outputTTF = str(fontName)
     else:
         extSource = str(TEMP / str(fontName[:-4]+"Ext-Regular.ttf"))
@@ -80,7 +80,7 @@ for font in IMPORT.glob("*.ttf"):
             sourceTTF["name"].removeNames(nameID=17)
             sourceTTF["OS/2"].panose.bWeight = 4
 
-        name = str(sourceTTF["name"].getName(1,3,1,platformID)).replace(" Medium","")
+        name = str(sourceTTF["name"].getName(1,3,1,platformID)).replace(" Medium","").replace("Heavy","Black")
 
         sourceTTF["name"].setName("Copyright 2022 The BIZ UDMincho Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)",0,3,1,platformID)
         sourceTTF["name"].setName(name,1,3,1,platformID)
@@ -88,8 +88,13 @@ for font in IMPORT.glob("*.ttf"):
 
         sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace(" Medium",""),4,3,1,platformID)
 
-        if "Bold" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
-            sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Bold",6,3,1,platformID)
+        sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,platformID)).replace("Heavy","Black"),1,3,1,platformID)
+        sourceTTF["name"].setName(str(sourceTTF["name"].getName(3,3,1,platformID)).replace("Heavy","Black"),3,3,1,platformID)
+        sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace("Heavy","Black"),4,3,1,platformID)
+        sourceTTF["name"].setName(str(sourceTTF["name"].getName(17,3,1,platformID)).replace("Heavy","Black"),17,3,1,platformID)
+
+        if "Heavy" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ").replace(" Black","-Black"),6,3,1,platformID)
         else:
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Regular",6,3,1,platformID)
 
@@ -113,7 +118,7 @@ for font in IMPORT.glob("*.ttf"):
             "pyftmerge",
             str(TEMP/outputTTF),
             str(extSource),
-            "--output-file="+str(EXPORT / str(outputTTF).replace("BIZ-","BIZ")),
+            "--output-file="+str(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black")),
         ]
     )
     
@@ -123,7 +128,7 @@ for font in IMPORT.glob("*.ttf"):
         # fixedPitch set incorrectly
         # also tweaks to OS/2 and head also necessary to match original
 
-    finalVersion = TTFont(str(EXPORT / str(outputTTF).replace("BIZ-","BIZ")))
+    finalVersion = TTFont(str(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black")))
     finalVersion["meta"] = sourceTTF["meta"]
 
     cmap0_3_4 = _c_m_a_p.CmapSubtable.newSubtable(4)
@@ -142,8 +147,11 @@ for font in IMPORT.glob("*.ttf"):
         #finalVersion["OS/2"].panose.bProportion = 9
         
     finalVersion["head"].fontRevision = float(VERSION)
-
+    finalVersion["head"].macStyle = 0x0000
     finalVersion["head"].flags = 0x000b
+
+    finalVersion["OS/2"].fsType = 0
+    finalVersion["OS/2"].fsSelection = 0x0040
 
     newDSIG = newTable("DSIG")
     newDSIG.ulVersion = 1
@@ -153,7 +161,7 @@ for font in IMPORT.glob("*.ttf"):
     finalVersion.tables["DSIG"] = newDSIG
 
 
-    finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ"))
+    finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black"))
 
 shutil.rmtree("temp")
 shutil.rmtree("master_ufo")
