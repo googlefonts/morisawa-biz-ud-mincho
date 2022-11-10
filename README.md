@@ -43,6 +43,9 @@ The proof files and QA tests are also available automatically via GitHub Actions
 
 **11 March 2022**
 - Font released with Google Core glyph set
+**10 November 2022**
+- Black added
+
 
 ## License
 
