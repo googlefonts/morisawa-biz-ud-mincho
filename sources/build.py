@@ -91,10 +91,10 @@ for font in IMPORT.glob("*.ttf"):
         sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,platformID)).replace("Heavy","Black"),1,3,1,platformID)
         sourceTTF["name"].setName(str(sourceTTF["name"].getName(3,3,1,platformID)).replace("Heavy","Black"),3,3,1,platformID)
         sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace("Heavy","Black"),4,3,1,platformID)
-        sourceTTF["name"].setName(str(sourceTTF["name"].getName(17,3,1,platformID)).replace("Heavy","Black"),17,3,1,platformID)
 
         if "Heavy" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ").replace(" Black","-Black"),6,3,1,platformID)
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(17,3,1,platformID)).replace("Heavy","Black"),17,3,1,platformID)
         else:
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Regular",6,3,1,platformID)
 
