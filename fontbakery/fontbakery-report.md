@@ -80,16 +80,16 @@ But got:  "BIZ UDP明朝". [code: non-ribbi-bad-value]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13419
-	- glyph00239
-	- glyph12957
-	- glyph00412
-	- glyph00873
-	- glyph00898
-	- glyph00523
-	- glyph00486
-	- glyph00433
-	- glyph12985 
+	- glyph12889
+	- glyph11997
+	- glyph00302
+	- glyph01252
+	- glyph00297
+	- glyph00060
+	- glyph13490
+	- glyph00625
+	- glyph00418
+	- glyph00538 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -244,16 +244,16 @@ But got:  "BIZ UD明朝". [code: non-ribbi-bad-value]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12056
-	- glyph01577
-	- glyph01668
-	- glyph01507
-	- glyph01630
-	- glyph01818
-	- glyph13380
-	- glyph01372
-	- glyph01893
-	- glyph13774 
+	- glyph01467
+	- glyph12037
+	- glyph13710
+	- glyph01738
+	- glyph01519
+	- glyph01308
+	- glyph13699
+	- glyph12201
+	- glyph01763
+	- glyph01563 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -321,7 +321,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * u24E37 (U+24E37): L<<1270.0,1520.0>--<1675.0,1522.0>> and 182 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
+</div></details><br></div></details><details><summary><b>[22] BIZUDPMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
 * [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
 
 * 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
@@ -366,10 +366,6 @@ But got:  "BIZ UDPMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUDP Mincho Regular"
 But got:  "BIZ UDP明朝" [code: bad-entry]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary><div>
-* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
-
-* 🔥 **FAIL** TYPOGRAPHIC_SUBFAMILY_NAME entry for Win "None" must be "Regular". Please note, since the font style is RIBBI, this record can be safely deleted. [code: bad-win-name]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -394,16 +390,16 @@ But got:  "BIZ UDP明朝" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph13419
-	- glyph00239
-	- glyph12957
-	- glyph00412
-	- glyph00873
-	- glyph00898
-	- glyph00523
-	- glyph00486
-	- glyph00433
-	- glyph12985 
+	- glyph12889
+	- glyph11997
+	- glyph00302
+	- glyph01252
+	- glyph00297
+	- glyph00060
+	- glyph13490
+	- glyph00625
+	- glyph00418
+	- glyph00538 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -473,7 +469,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * uni4E9F (U+4E9F): L<<984.0,1059.0>--<985.0,1174.0>> and 103 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
+</div></details><br></div></details><details><summary><b>[22] BIZUDMincho-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
 * [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
 
 * 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
@@ -518,10 +514,6 @@ But got:  "BIZ UDMincho" [code: bad-entry]
 * 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
 Expected: "BIZUD Mincho Regular"
 But got:  "BIZ UD明朝" [code: bad-entry]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary><div>
-* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
-
-* 🔥 **FAIL** TYPOGRAPHIC_SUBFAMILY_NAME entry for Win "None" must be "Regular". Please note, since the font style is RIBBI, this record can be safely deleted. [code: bad-win-name]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
 * [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 
@@ -551,16 +543,16 @@ But got:  "BIZ UD明朝" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12056
-	- glyph01577
-	- glyph01668
-	- glyph01507
-	- glyph01630
-	- glyph01818
-	- glyph13380
-	- glyph01372
-	- glyph01893
-	- glyph13774 
+	- glyph01467
+	- glyph12037
+	- glyph13710
+	- glyph01738
+	- glyph01519
+	- glyph01308
+	- glyph13699
+	- glyph12201
+	- glyph01763
+	- glyph01563 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -631,7 +623,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 24 | 26 | 42 | 427 | 29 | 296 | 0 |
+| 24 | 24 | 42 | 427 | 29 | 298 | 0 |
 | 3% | 3% | 5% | 51% | 3% | 35% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
