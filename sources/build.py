@@ -80,7 +80,7 @@ for font in IMPORT.glob("*.ttf"):
             sourceTTF["name"].removeNames(nameID=17)
             sourceTTF["OS/2"].panose.bWeight = 4
 
-        name = str(sourceTTF["name"].getName(1,3,1,platformID)).replace(" Medium","").replace("Heavy","Black")
+        name = str(sourceTTF["name"].getName(1,3,1,platformID)).replace(" Medium","")
 
         sourceTTF["name"].setName("Copyright 2022 The BIZ UDMincho Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)",0,3,1,platformID)
         sourceTTF["name"].setName(name,1,3,1,platformID)
@@ -88,13 +88,19 @@ for font in IMPORT.glob("*.ttf"):
 
         sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace(" Medium",""),4,3,1,platformID)
 
-        sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,platformID)).replace("Heavy","Black"),1,3,1,platformID)
-        sourceTTF["name"].setName(str(sourceTTF["name"].getName(3,3,1,platformID)).replace("Heavy","Black"),3,3,1,platformID)
-        sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace("Heavy","Black"),4,3,1,platformID)
-
         if "Heavy" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
-            sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ").replace(" Black","-Black"),6,3,1,platformID)
-            sourceTTF["name"].setName(str(sourceTTF["name"].getName(17,3,1,platformID)).replace("Heavy","Black"),17,3,1,platformID)
+            sourceTTF["OS/2"].usWeightClass = 700
+            sourceTTF["OS/2"].panose.bWeight = 7
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,platformID)).replace(" Heavy",""),1,3,1,platformID)
+            sourceTTF["name"].setName("Bold",2,3,1,platformID)
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(3,3,1,platformID)).replace("Heavy","Bold"),3,3,1,platformID)
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(4,3,1,platformID)).replace("Heavy","Bold"),4,3,1,platformID)
+            sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Bold",6,3,1,platformID)
+            if platformID != 1041:
+                sourceTTF["name"].setName(str(sourceTTF["name"].getName(7,3,1,platformID)).replace("Heavy","Bold"),7,3,1,platformID)
+            sourceTTF["name"].removeNames(nameID=16)
+            sourceTTF["name"].removeNames(nameID=17)
+
         else:
             sourceTTF["name"].setName(str(sourceTTF["name"].getName(1,3,1,1033)).replace("BIZ ","BIZ")+"-Regular",6,3,1,platformID)
 
@@ -104,6 +110,7 @@ for font in IMPORT.glob("*.ttf"):
             sourceTTF["name"].setName("https://scripts.sil.org/OFL",14,3,1,platformID)
 
     sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
+
     
     # OS/2 Table modifications
     sourceTTF["OS/2"].fsType = 0
@@ -118,7 +125,7 @@ for font in IMPORT.glob("*.ttf"):
             "pyftmerge",
             str(TEMP/outputTTF),
             str(extSource),
-            "--output-file="+str(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black")),
+            "--output-file="+str(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Bold")),
         ]
     )
     
@@ -128,7 +135,7 @@ for font in IMPORT.glob("*.ttf"):
         # fixedPitch set incorrectly
         # also tweaks to OS/2 and head also necessary to match original
 
-    finalVersion = TTFont(str(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black")))
+    finalVersion = TTFont(str(EXPORT / str(outputTTF).replace("BIZ-","BIZ")).replace("Heavy","Bold"))
     finalVersion["meta"] = sourceTTF["meta"]
 
     cmap0_3_4 = _c_m_a_p.CmapSubtable.newSubtable(4)
@@ -147,11 +154,7 @@ for font in IMPORT.glob("*.ttf"):
         #finalVersion["OS/2"].panose.bProportion = 9
         
     finalVersion["head"].fontRevision = float(VERSION)
-    finalVersion["head"].macStyle = 0x0000
     finalVersion["head"].flags = 0x000b
-
-    finalVersion["OS/2"].fsType = 0
-    finalVersion["OS/2"].fsSelection = 0x0040
 
     newDSIG = newTable("DSIG")
     newDSIG.ulVersion = 1
@@ -175,8 +178,9 @@ for font in IMPORT.glob("*.ttf"):
     avgCharWidth = int(round(width_sum / count))
     finalVersion["OS/2"].xAvgCharWidth = avgCharWidth
 
+    finalVersion["OS/2"].fsType = 0
 
-    finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Black"))
+    finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ").replace("Heavy","Bold"))
 
 shutil.rmtree("temp")
 shutil.rmtree("master_ufo")
