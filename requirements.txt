@@ -38,7 +38,7 @@ fs==2.4.16
 gflanguages==0.4.3
 gftools==0.9.21
 gitdb==4.0.10
-GitPython==3.1.29
+GitPython==3.1.41
 glyphsets==0.5.4
 glyphsLib==6.1.0
 glyphtools==0.8.0
