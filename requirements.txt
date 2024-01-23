@@ -57,7 +57,7 @@ opentypespec==1.9.1
 orjson==3.8.3
 packaging==21.3
 picosvg==0.20.6
-Pillow==9.3.0
+Pillow==10.2.0
 pip-api==0.0.30
 pngquant-cli==2.17.0.post5
 protobuf==3.20.3
